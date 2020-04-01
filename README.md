@@ -1,12 +1,12 @@
 # Controlling Ubuntu Desktop Brightness 
 
-Set brightness from command line
 
 get the current display output
 ```console
 $ xrandr | grep " connected" | cut -f1 -d " " 
 ```
 
+Set brightness from command line
 ``` console
 $ xrandr --output [display output] --brightness [0.0 - 1.0]
 ``` 
